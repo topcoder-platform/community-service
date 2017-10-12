@@ -1,0 +1,6 @@
+{
+  "SCOREBOARD":{
+    "DB": "SCOREBOARD_DB",
+    "ADMIN_ROLE": "SCOREBOARD_ADMIN_ROLE"
+  }
+}

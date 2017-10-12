@@ -1,0 +1,49 @@
+{
+  "name": "tc-services",
+  "version": "1.0.0",
+  "description": "API services for topcoder",
+  "main": "src/app.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint .",
+    "lint:fix": "./node_modules/.bin/eslint . --fix || true",
+    "build": "babel src -d dist",
+    "prestart": "npm run -s build",
+    "start": "node dist",
+    "dev": "NODE_ENV=development BABEL_ENV=development nodemon -w src --exec \"babel-node src/index \" ",
+    "test": "npm run lint",
+    "init-scoreboard-data": "babel-node ./migrations/scoreboard"
+  },
+  "author": "TCSCODER",
+  "license": "ISC",
+  "dependencies": {
+    "babel-register": "6.26.0",
+    "body-parser": "1.18.2",
+    "config": "1.26.2",
+    "cors": "2.8.4",
+    "express": "4.16.1",
+    "get-parameter-names": "0.3.0",
+    "joi": "11.1.1",
+    "lodash": "4.17.4",
+    "morgan": "1.9.0",
+    "pg": "7.3.0",
+    "sequelize": "4.13.5",
+    "tc-accounts": "git+https://github.com/appirio-tech/accounts-app.git#dev"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.0.1",
+    "babel-plugin-dynamic-import-node": "1.1.0",
+    "babel-plugin-inline-json-import": "0.2.1",
+    "babel-plugin-module-resolver": "2.7.1",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-preset-env": "1.6.0",
+    "eslint": "4.8.0",
+    "eslint-config-airbnb": "15.1.0",
+    "eslint-import-resolver-babel-module": "3.0.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.4.0",
+    "nodemon": "1.12.1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ],
+  "plugins": [
+    "dynamic-import-node",
+    "transform-runtime",
+    ["module-resolver", {
+      "extensions": [".js"],
+      "root": [
+        "./src"
+      ],
+      "transformFunctions": ["resolveWeak"]
+    }],
+    ["inline-json-import", {}]
+  ]
+}

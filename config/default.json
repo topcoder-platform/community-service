@@ -1,0 +1,6 @@
+{
+  "SCOREBOARD":{
+    "DB": "postgres://postgres:postgres@localhost:5432/scoreboard",
+    "ADMIN_ROLE": "administrator"
+  }
+}
