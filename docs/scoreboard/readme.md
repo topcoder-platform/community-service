@@ -8,7 +8,7 @@
 
 - Import postman collection / environment from [`/community-service/docs/scoreboard`](.)
 
-- Login to http://local.topcoder-dev.com:3000/ using `amy_admin/topcoder1` as credentials and note down the token from the console.
+- Login to http://local.topcoder-dev.com:3000 using `amy_admin/topcoder1` as credentials and note down the token from the console.
 
 ![Token Capture](readme/token.jpg)
 
@@ -60,7 +60,7 @@
 
 #### Create submission field validation
 
-Values taken from [`/community-service/config/tco/submissionCodeFields.json`](/community-service/config/tco/submissionCodeFields.json).
+Values taken from [`/community-service/config/tco/submissionCodeFields.json`](../../config/tco/submissionCodeFields.json).
 
 ![Submission field validation](readme/crSubFieldValidation.jpg)
 
@@ -87,7 +87,7 @@ Values taken from [`/community-service/config/tco/submissionCodeFields.json`](/c
 ### Public Page Verification
 
 - Add a Code Challenge and a few submissions to it and you will see the below table.
-- The fields are loaded dynamically based on the configuration files [`/community-service/config/tco/submissionCodeFields.json`](../../config/tco/submissionCodeFields.json) and [`/community-service/config/tco/submissionDesignFields.json`](../../community-service/config/tco/submissionDesignFields.json).
+- The fields are loaded dynamically based on the configuration files [`/community-service/config/tco/submissionCodeFields.json`](../../config/tco/submissionCodeFields.json) and [`/community-service/config/tco/submissionDesignFields.json`](../../config/tco/submissionDesignFields.json).
 
 - By default challenge ID 123 is setup for Code and 1234 for Design.
 
